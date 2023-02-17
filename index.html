@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css" />
+    <!-- <link rel="stylesheet" href="build.css" /> -->
+    <title>Form Validator Project</title>
+  </head>
+  <!--  -->
+  <body class="flex justify-center items-center box-border min-h-screen m-0 bg-gray-100">
+    <div>
+      <div class="text-4xl text-center mb-6">Form Validator Project</div>
+      <div
+        class="container flex justify-center items-center bg-white border-solid border-2 border-stone-800 w-[400px] rounded-md shadow-lg"
+      >
+        <form id="form" class="w-10/12">
+          <!-- Title -->
+          <div class="mx-0 text-center text-2xl mb-4 mt-4">Sign Up</div>
+
+          <!-- Username form-->
+          <div class="form-control block mb-6">
+            <label for="username" class="block text-lg">Username</label>
+            <input
+              type="text"
+              id="username"
+              class="w-full border-2 border-solid rounded-md p-1.5"
+              placeholder="Enter username"
+            />
+            <small class="hidden text-red-500">Error message</small>
+          </div>
+
+          <!-- Email form-->
+          <div class="form-control block mb-6">
+            <label for="email" class="block text-lg">Email</label>
+            <input
+              type="text"
+              id="email"
+              class="w-full border-2 border-solid rounded-md p-1.5"
+              placeholder="Enter email"
+            />
+            <small class="hidden text-red-500">Error Message</small>
+          </div>
+
+          <!-- Password form-->
+          <div class="form-control block mb-6">
+            <label for="password" class="block text-lg">Password</label>
+            <input
+              type="password"
+              id="password"
+              class="w-full border-2 border-solid rounded-md p-1.5"
+              placeholder="Enter password"
+            />
+            <small class="hidden text-red-500">Error Message</small>
+          </div>
+
+          <!-- Confirm Password form-->
+          <div class="form-control block mb-6">
+            <label for="password" class="block text-lg">Confirm Password</label>
+            <input
+              type="password"
+              id="password2"
+              class="w-full border-2 border-solid rounded-md p-1.5"
+              placeholder="Confirm password"
+            />
+            <small class="hidden text-red-500">Error Message</small>
+          </div>
+
+          <!-- Submit Button -->
+          <button
+            type="submit"
+            class="cursor-pointer block w-full mb-6 rounded-lg px-6 py-2 bg-cyan-500 shadow-sm shadow-cyan-500/50"
+          >
+            Submit
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
